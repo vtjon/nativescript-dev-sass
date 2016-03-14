@@ -1,0 +1,29 @@
+{
+  "name": "nativescript-dev-sass",
+  "version": "0.1.0",
+  "description": "SASS CSS pre-processor for NativeScript projects.",
+  "scripts": {
+    "test": "exit 0",
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/before-prepare.js",
+        "inject": true
+      }
+    ]
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ToddAnglin/nativescript-dev-sass.git"
+  },
+  "dependencies": {
+    "node-sass": "*",
+    "glob": "*",
+    "nativescript-hook": "^0.2.0"
+  }
+}
