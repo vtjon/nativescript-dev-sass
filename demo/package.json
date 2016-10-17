@@ -1,0 +1,18 @@
+{
+  "description": "NativeScript SASS Plugin Demo",
+  "license": "MIT",
+  "readme": "NativeScript SASS Plugin Demo Project",
+  "repository": "https://github.com/toddanglin/nativescript-dev-sass",
+  "nativescript": {
+    "id": "org.nativescript.demo",
+    "tns-ios": {
+      "version": "2.3.0"
+    }
+  },
+  "dependencies": {
+    "tns-core-modules": "2.3.0"
+  },
+  "devDependencies": {
+    "nativescript-dev-sass": "^0.3.0"
+  }
+}

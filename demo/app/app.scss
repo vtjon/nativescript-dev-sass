@@ -1,0 +1,23 @@
+﻿@import 'variables';
+@import 'styles/helpers';
+
+.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin: 20;
+    color: $primaryColor;
+}
+
+button {
+    font-size: 42;
+    horizontal-align: center;
+    @include buttonColor();
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+    margin: 0 20;
+    text-align: center;
+}

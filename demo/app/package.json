@@ -1,0 +1,28 @@
+{
+	"name": "nativscript-sass-demo",
+	"main": "app.js",
+	"version": "2.3.0",
+	"author": "Telerik <support@telerik.com>",
+	"description": "Nativescript SASS plugin demo project",
+	"license": "MIT",
+	"keywords": [
+		"telerik",
+		"mobile",
+		"nativescript",
+		"{N}",
+		"tns",
+		"appbuilder",
+		"template"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/toddanglin/nativescript-dev-sass"
+	},
+	"bugs": {
+		"url": "https://github.com/toddanglin/nativescript-dev-sass/issues"
+	},
+	"homepage": "https://github.com/toddanglin/nativescript-dev-sass",
+	"android": {
+		"v8Flags": "--expose_gc"
+	}
+}
