@@ -31,6 +31,7 @@ demo/platforms
 demo/node_modules
 demo/lib
 demo/hooks
+demo/app/**/*.css
 npm-debug.log
 node_modules
 docs/html
