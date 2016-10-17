@@ -27,10 +27,7 @@ scratch/
 .vscode/
 test-reports.xml
 
-demo/platforms
-demo/node_modules
-demo/lib
-demo/hooks
+demo/
 npm-debug.log
 node_modules
 docs/html
