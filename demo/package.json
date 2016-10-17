@@ -13,6 +13,6 @@
     "tns-core-modules": "2.3.0"
   },
   "devDependencies": {
-    "nativescript-dev-sass": "^0.3.0"
+    "nativescript-dev-sass": "file:.."
   }
 }
