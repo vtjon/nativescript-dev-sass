@@ -1,3 +1,7 @@
+## v0.4.1
+
+- Updated after-prepare step to remove node-sass directory from compiled app packages (https://github.com/toddanglin/nativescript-dev-sass/issues/3)
+
 ## v0.4.0
 
 - Added demo project to Git repo
