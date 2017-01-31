@@ -1,6 +1,6 @@
 {
   "name": "nativescript-dev-sass",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "SASS CSS pre-processor for NativeScript projects.",
   "scripts": {
     "test": "exit 0",
@@ -21,6 +21,13 @@
       }
     ]
   },
+  "keywords": [
+    "NativeScript", "SASS", "CSS"
+  ],
+  "author": {
+    "name": "Todd Anglin",
+    "email": "toddanglin@gmail.com"
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -31,5 +38,10 @@
     "node-sass": "*",
     "glob": "*",
     "nativescript-hook": "^0.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/toddanglin/nativescript-dev-sass/issues"
+  },
+  "homepage": "https://github.com/toddanglin/nativescript-dev-sass",
+  "readmeFilename": "README.md"
 }
