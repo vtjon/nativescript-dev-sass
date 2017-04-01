@@ -1,3 +1,7 @@
+## v1.0.0-rc
+
+- Updated to support breaking changes in NativeScript 3.0; should be backwards compat with older NativeScript versions
+
 ## v0.4.1
 
 - Updated after-prepare step to remove node-sass directory from compiled app packages (https://github.com/toddanglin/nativescript-dev-sass/issues/3)

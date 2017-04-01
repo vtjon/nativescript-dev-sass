@@ -7,6 +7,8 @@ SASS CSS pre-processor for NativeScript projects
 ----------
 This plugin uses the [node-sass compiler](https://www.npmjs.com/package/node-sass) to transpile SCSS files to CSS files in [NativeScript](https://www.nativescript.org/) projects. 
 
+**NOTE: LiveSync does not work with NativeScript CLI 2.5.x**
+This plugin will work in all version of NativeScript, but LiveSync only works with NativeScript 2.4.x and ealier, and again with 3.x+
 
 How to use
 ----------
