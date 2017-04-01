@@ -6,11 +6,11 @@
   "nativescript": {
     "id": "org.nativescript.demo",
     "tns-ios": {
-      "version": "2.3.0"
+      "version": "2.4.0"
     }
   },
   "dependencies": {
-    "tns-core-modules": "2.3.0"
+    "tns-core-modules": "^2.4.4"
   },
   "devDependencies": {
     "nativescript-dev-sass": "file:.."
