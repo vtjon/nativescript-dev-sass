@@ -1,6 +1,5 @@
 SASS CSS pre-processor for NativeScript projects
 =======================================
-(Based on [nativescript-dev-less plugin](https://github.com/NativeScript/nativescript-dev-less))
 
 [![npm version](https://badge.fury.io/js/nativescript-dev-sass.svg)](https://badge.fury.io/js/nativescript-dev-sass)
 
@@ -42,10 +41,28 @@ In NativeScript 2.4 and lower, the current version of this plug-in will cause Li
 
 ## Breaking Changes
 ---
-- As of version 1.0, `@import` statements require relative paths (previous versions built all paths relative app root)
+v1.0.0
+- `@import` statements require relative paths (previous versions built all paths relative app root)
+- Importing stylesheets from `node_modules` now requires "`~`" to start the path (ex: `@import '~nativescript-theme-core'` instead of `@import 'nativescript-theme-core'`)
 
-## NOTE: SASS @import syntax
+## SASS @import syntax
 ---
+To import external stylesheets, use the standard SASS syntax:
+```
+@import 'variables'
+```
+As of v1.0.0 of this plug-in, imports use relative paths. For example, to reference an external stylesheet in the root `app` directory from a stylesheet in a sub-folder:
+```
+@import '../variables'
+```
+As of v1.0.0 of this plugin, you can also reference SASS files in the `node_modules` directory using the tilde (`~`) notation. For example, to reference a SASS stylesheet in the `nativescript-theme-core` plugin:
+```
+@import '~nativescript-theme-core/scss/platforms/index.ios'
+```
+
+NOTE: Do not include a forward slash after the tilde. Use `~[node_modules folder name]` and not `~/[node_modules folder name]`. The later will not resolve correctly.
+
+### Using file extensions with @import
 In some cases, the current version of node-sass requires `@import` statements to explicitly include the filename extension (like `.scss`). This occurs if files with the same name exist in the same path.
 
 For example:
@@ -55,7 +72,7 @@ variables.css
 _variables.scss
 ```
 
-Node-sass will throw an error if the `@import variables;` syntax is used. As a workaround, use an explicit filename, like: `@import variables.scss;`
+Node-sass will throw an error if the `@import 'variables';` syntax is used. As a workaround, use an explicit filename, like: `@import 'variables.scss';`
 
 This is currently on the roadmap for node-sass 4.0. [See this issue for more detail](https://github.com/sass/node-sass/issues/1222).
 

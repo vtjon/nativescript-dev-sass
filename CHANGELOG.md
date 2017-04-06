@@ -3,7 +3,8 @@
 - Updated to support changes in NativeScript 2.5 and 3.0; LiveSync should work as expected in 2.5+
 - Refactored to execute node sass in separate process (via @PeterStaev #22)
 - Added support for .sass files (in addition to .scss)
-- BREAKING CHANGE: Imports now require relative paths, such as `@import ../../variables` (previous versions always assumed path relative to app root)
+- **BREAKING CHANGE:** Imports now require relative paths, such as `@import ../../variables` (previous versions always assumed path relative to app root)
+- **BREAKING CHANGE:** Importing stylesheets from `node_modules` now requires paths to begin with a "`~`" (previous versions did not require a tilde)
 - NOTE: LiveSync in versions 2.4 and lower now triggers full app refresh (Recommended to use version 0.4.)
 - Demo updated to use latest version and test .sass files + relative import paths
 
