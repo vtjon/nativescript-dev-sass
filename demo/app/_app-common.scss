@@ -1,0 +1,33 @@
+﻿@import '~nativescript-theme-core/scss/light';
+@import 'variables';
+@import 'styles/helpers';
+
+// Customize any of the NativeScript Core theme’s variables here, for instance 
+$error: orange;
+
+// Import the theme’s main ruleset.
+@import '~nativescript-theme-core/scss/index';
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin: 20;
+    color: $primaryColor;
+}
+
+button {
+    font-size: 42;
+    horizontal-align: center;
+    @include buttonColor();
+}
+
+.message {
+    font-size: 20;
+    color: $error;
+    horizontal-align: center;
+    margin: 0 20;
+    text-align: center;
+}
