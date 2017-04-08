@@ -1,4 +1,7 @@
-## v1.0.0-rc
+## v1.1.0
+- Added support for "~/" in @import paths (resolves to app root)
+
+## v1.0.0
 
 - Updated to support changes in NativeScript 2.5 and 3.0; LiveSync should work as expected in 2.5+
 - Refactored to execute node sass in separate process (via @PeterStaev #22)
