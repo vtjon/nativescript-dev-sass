@@ -1,3 +1,6 @@
+## v1.1.1
+- Fixed regression will follow symlinked directories (#30) via @ludwiktrammer
+
 ## v1.1.0
 - Added support for "~/" in @import paths (resolves to app root)
 
