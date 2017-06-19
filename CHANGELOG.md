@@ -1,3 +1,7 @@
+## v1.2.0
+- Merged #35 to enable support for `tns prepare` with `--path` option (Fixes #34)
+- Added additional example to demo project
+
 ## v1.1.1
 - Fixed regression will follow symlinked directories (#30) via @ludwiktrammer
 
