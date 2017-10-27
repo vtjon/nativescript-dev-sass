@@ -1,6 +1,6 @@
 {
   "name": "nativescript-dev-sass",
-  "version": "1.3.2",
+  "version": "2.0.0",
   "description": "SASS CSS pre-processor for NativeScript projects.",
   "scripts": {
     "test": "exit 0",
@@ -25,16 +25,6 @@
       {
         "type": "after-prepare",
         "script": "lib/after-prepare.js",
-        "inject": true
-      },
-      {
-        "type": "before-watch",
-        "script": "lib/watch.js",
-        "inject": true
-      },
-      {
-        "type": "after-watch",
-        "script": "lib/after-watch.js",
         "inject": true
       }
     ],

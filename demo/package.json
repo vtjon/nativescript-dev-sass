@@ -7,6 +7,9 @@
     "id": "org.nativescript.demo",
     "tns-ios": {
       "version": "3.0.0"
+    },
+    "tns-android": {
+      "version": "3.2.0"
     }
   },
   "dependencies": {
@@ -14,6 +17,10 @@
     "tns-core-modules": "^3.0.0"
   },
   "devDependencies": {
-    "nativescript-dev-sass": "file:.."
+    "babel-traverse": "6.4.5",
+    "babel-types": "6.4.5",
+    "babylon": "6.4.5",
+    "lazy": "1.0.11",
+    "nativescript-dev-sass": "file://.."
   }
 }
